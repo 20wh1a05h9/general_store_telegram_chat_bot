@@ -1,0 +1,10 @@
+services:
+  - name: app
+    plan: starter
+    env:
+      - key: TELEGRAM_BOT_TOKEN
+        from: env
+      - key: PORT
+        from: env
+    github:
+      branch: main
